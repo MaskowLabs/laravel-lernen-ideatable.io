@@ -1,0 +1,61 @@
+@import "./../../fonts/fonts.scss";
+@import "./variables.scss";
+@import "./layouts/authentication.scss";
+
+
+@import "./elements/cards.scss";
+@import "./elements/inputs.scss";
+@import "./elements/buttons.scss";
+
+
+*, *::before, *::after { 
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+html { font-family: $font-family; scroll-behavior: smooth; }
+body { 
+    font-family: $font-family; 
+    text-align: left; 
+    background-color: #f9fbfc; 
+    -webkit-text-size-adjust: 100%; 
+    text-rendering: optimizeLegibility; 
+    font-smoothing: antialiased; 
+    -moz-font-feature-settings: "liga" on; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+    display: block; 
+    margin: 0; 
+    padding: 0; 
+}
+
+
+span { line-height: inherit; font-size: inherit; font-weight: inherit; display: inline; font-family: $font-family; }
+img { width: 100%; object-fit: cover; object-position: center; display: block; }
+strong, b { font-weight: 500; }
+em, i { font-style: italic; }
+ul, ol { margin-top: 0; margin-bottom: 0; padding: 0; }
+
+a { 
+    color: $color-primary-400; 
+    text-decoration: none; 
+    cursor: pointer; 
+    transition: all 0.2s ease;
+
+    &:hover { color: $color-primary-500; }
+    &:visited {  }
+    &:focus, &:focus-visible { outline: none; }
+}
+
+p {
+    margin-top: 0; 
+    margin-bottom: 1.125rem; 
+    line-height: 1.4; 
+    font-weight: 400; 
+    color: $color-gray-900;
+}
+
+address { font-style: normal; }
+blockquote { margin: 0; padding: 0; display: block; }
